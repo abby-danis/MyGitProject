@@ -1,6 +1,13 @@
-m1 = int(input("Please enter mark #1: "))
-m2 = int(input("Please enter mark #2: "))
-# TODO, add user prompt for mark 3
+def calcTotal(marks):
+    total = 0
+    for n in range(0, len(marks)):
+        total += marks[n]
+    return total
 
-total = m1 + m2 # plus 3rd mark
+testMarks = []
+testMarks.append(int(input("Please enter mark #1: ")))
+testMarks.append(int(input("Please enter mark #2: ")))
+# todo, add prompt for 3rd mark
+
+total = calcTotal(testMarks)
 print("Total: ",str(total)+"\n")
